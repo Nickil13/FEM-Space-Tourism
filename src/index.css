@@ -13,7 +13,28 @@
         @apply font-secondary;
     }
 
+    h1 {
+        @apply text-h1-mobile;
+    }
+    h5 {
+        @apply tracking-2.7;
+    }
     p {
         @apply font-body;
+    }
+
+    @media screen(lg) {
+        h1 {
+            @apply text-h1;
+        }
+        h5 {
+            @apply text-lg tracking-[3.38px];
+        }
+    }
+
+    @media screen(lg) {
+        h5 {
+            @apply text-h5 tracking-4.75;
+        }
     }
 }

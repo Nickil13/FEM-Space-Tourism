@@ -2,6 +2,13 @@
 module.exports = {
     content: ["./src/**/*.{js,jsx}"],
     theme: {
+        screens: {
+            sm: "375px",
+            md: "600px",
+            lg: "768px",
+            xlg: "1200px",
+            "2xl": "1440px",
+        },
         colors: {
             black: "#0B0D17",
             purple: { 100: "#D0D6F9" },
@@ -32,6 +39,9 @@ module.exports = {
             height: {
                 nav: "88px",
             },
+            minHeight: {
+                "nav-screen": "calc(100vh - 88px)",
+            },
             letterSpacing: {
                 4.75: "4.75px",
                 2.35: "2.35px",
@@ -40,6 +50,9 @@ module.exports = {
             },
             backgroundImage: {
                 "home-mobile": "url(./assets/home/background-home-mobile.jpg)",
+                "home-tablet": "url(./assets/home/background-home-tablet.jpg)",
+                "home-desktop":
+                    "url(./assets/home/background-home-desktop.jpg)",
             },
         },
     },
